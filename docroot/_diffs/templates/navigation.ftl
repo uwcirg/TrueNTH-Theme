@@ -1,6 +1,6 @@
 <nav class="${nav_css_class} navbar site-navigation" id="navigation" role="navigation">
 	<div class="navbar-inner">
-		<div class="collapse nav-collapse">
+		<div class="nav-collapse">
 			<ul aria-label="<@liferay.language key="site-pages" />" class="nav nav-collapse" role="menubar">
 				<#list nav_items as nav_item>
 					<#assign nav_item_attr_selected = "" />

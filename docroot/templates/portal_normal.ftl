@@ -10,6 +10,12 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	${theme.include(top_head_include)}
+	
+	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.css" rel="stylesheet" />
+	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.css" rel="stylesheet" />
+    <link href="https://truenth-demo.cirg.washington.edu/static/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://truenth-demo.cirg.washington.edu/static/css/topnav.css" rel="stylesheet" type="text/css" />
+    <link href="${css_folder}/trueNTH/trueNTHHeader.css"" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="${css_class}">
@@ -24,24 +30,6 @@ ${theme.include(body_top_include)}
 
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
-		<div id="heading">
-			<h1 class="site-title">
-				<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-					<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-				</a>
-
-				<#if show_site_name>
-					<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-						${site_name}
-					</span>
-				</#if>
-			</h1>
-
-			<h2 class="page-title">
-				<span>${the_title}</span>
-			</h2>
-		</div>
-
 		<#if !is_signed_in>
 			<a href="${sign_in_url}" data-redirect="${is_login_redirect_required?string}" id="sign-in" rel="nofollow">${sign_in_text}</a>
 		</#if>
@@ -52,7 +40,6 @@ ${theme.include(body_top_include)}
 	</header>
 
 	<div id="content">
-		<nav id="breadcrumbs"><@liferay.breadcrumbs /></nav>
 
 		<#if selectable>
 			${theme.include(content_include)}
@@ -67,7 +54,7 @@ ${theme.include(body_top_include)}
 
 	<footer id="footer" role="contentinfo">
 		<p class="powered-by">
-			<@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
+			<@liferay.language key="powered-by" /> <a href="http://cirg.washington.edu" rel="external">CIRG, University of Washington</a>
 		</p>
 	</footer>
 </div>
@@ -76,6 +63,9 @@ ${theme.include(body_bottom_include)}
 
 ${theme.include(bottom_include)}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="${javascript_folder}/trueNTH/trueNTHHeader.js"></script>
 </body>
 
 </html>

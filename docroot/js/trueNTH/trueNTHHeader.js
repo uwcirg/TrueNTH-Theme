@@ -18,6 +18,7 @@ jQuery(document).ready(function () {
     }, 'html')
         .done(function (data) {
             jQuery("body").prepend(data);
+            $(".tnth-nav-wrapper").addClass( "bootstrap-3 font-awesome-4" );
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
 
@@ -32,9 +33,9 @@ jQuery(document).ready(function () {
             }, 'html')
                 .done(function (data) {
                 	jQuery("body").prepend(data);
+                	$(".tnth-nav-wrapper").addClass( "bootstrap-3 font-awesome-4" );
                     console.log("unprotected_xhr success");
                 })
                 .fail(function (jqXHR, textStatus, errorThrown) {});
-
         });
 });
