@@ -13,8 +13,8 @@
 	
 	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
 	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
-    <link href="https://truenth-demo.cirg.washington.edu/static/css/main.css" rel="stylesheet" type="text/css" />
-    <link href="https://truenth-demo.cirg.washington.edu/static/css/topnav.css" rel="stylesheet" type="text/css" />
+    <link href="${csLocation}/static/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
     <link href="${css_folder}/trueNTH/trueNTHHeader.css"" rel="stylesheet" type="text/css" />
 </head>
 
@@ -63,6 +63,7 @@ ${theme.include(body_bottom_include)}
 
 ${theme.include(bottom_include)}
 
+<#include "${full_templates_path}/js/trueNTH/trueNTHDefinitions.ftl" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="${javascript_folder}/trueNTH/trueNTHHeader.js"></script>

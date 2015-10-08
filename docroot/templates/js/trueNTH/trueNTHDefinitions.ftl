@@ -1,3 +1,8 @@
+<script type="text/javascript">
+PROTECTED_PORTAL_NAV_PAGE = "${csLocation}/api/protected-portal-wrapper-html";
+UNPROTECTED_PORTAL_NAV_PAGE = "${csLocation}/api/portal-wrapper-html/";
+PORTAL_HOSTNAME  = new URL(UNPROTECTED_PORTAL_NAV_PAGE).hostname;
+
 jQuery( document ).ajaxError(function( event, jqxhr, settings, exception ) {
     if ( jqxhr.status== 401 ) {
         console.log("401 caught");
@@ -35,3 +40,4 @@ jQuery(document).ready(function () {
                 .fail(function (jqXHR, textStatus, errorThrown) {});
         });
 });
+</script>
