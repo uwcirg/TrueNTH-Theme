@@ -11,8 +11,8 @@
 
 	${theme.include(top_head_include)}
 	
-	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.css" rel="stylesheet" />
-	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.css" rel="stylesheet" />
+	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
+	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
     <link href="https://truenth-demo.cirg.washington.edu/static/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://truenth-demo.cirg.washington.edu/static/css/topnav.css" rel="stylesheet" type="text/css" />
     <link href="${css_folder}/trueNTH/trueNTHHeader.css"" rel="stylesheet" type="text/css" />
