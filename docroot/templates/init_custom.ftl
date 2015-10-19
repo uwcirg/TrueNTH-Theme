@@ -10,6 +10,8 @@
 ${callbackParameters.add(TrueNTHOAuthConstants.REDIRECT, portalUtil.getCurrentCompleteURL(request))}	
 <#assign trueNTHConnectLoginURL = trueNTHConnect.getAuthorizationUrl(themeDisplay.companyId,1, callbackParameters) />
 
+<#assign trueNTHConnectLogoutURL = themeDisplay.getURLSignOut() >
+
 <#if themeDisplay.userId??>
 	<#assign trueNTHAssociation=TrueNTHAssociationLocalService.getByUserId(themeDisplay.userId)!''>
 	<#assign isTrueNTHUser=trueNTHAssociation?has_content>

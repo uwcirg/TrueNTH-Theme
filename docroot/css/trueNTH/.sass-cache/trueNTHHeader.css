@@ -1,0 +1,54 @@
+.aui .tnth-nav-wrapper {
+  width: 100%;
+  background-color: #1a1919; }
+
+.aui .tnth-nav-main {
+  padding: 5px 15px; }
+
+.aui .tnth-nav-xs {
+  margin: 0 0 5px; }
+
+.aui .tnth-nav-xs .navbar-brand {
+  padding: 4px; }
+
+.aui .tnth-nav-xs .navbar-brand img {
+  height: 54px; }
+
+.aui .tnth-nav-xs .nav a {
+  color: white; }
+
+.aui .tnth-nav-xs .nav a:active, .aui .tnth-nav-xs .nav a:hover {
+  color: #333333; }
+
+.aui .tnth-white {
+  color: #ecf7e5;
+  background-color: transparent;
+  border-color: transparent;
+  transition: all .2s ease-in-out 0s;
+  -webkit-transition: all .2s ease-in-out 0s;
+  text-shadow: none;
+  background-image: none; }
+
+.aui .tnth-white:hover, .aui .tnth-white:focus, .aui .tnth-white.active {
+  color: #333;
+  background-color: white; }
+
+.aui .tnth-white.navbar-toggle {
+  margin: 8px 15px 8px 0; }
+
+.aui .tnth-search {
+  display: inline-block;
+  padding: 0; }
+
+.aui .tnth-show-search {
+  height: 43px; }
+
+.aui .hide-initial, .aui .form-group.hide-initial {
+  display: none; }
+
+/*
+.dockbar.navbar-static-top {
+	display:none
+}
+*/
+
