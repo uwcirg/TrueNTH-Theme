@@ -10,6 +10,7 @@ jQuery(document).ready(function() {
 		type : 'GET',
 		contentType : 'text/plain',
 		crossDomain : true,
+		async:true,
 		xhrFields : {
 			withCredentials : true
 		},
@@ -19,7 +20,7 @@ jQuery(document).ready(function() {
 		
 		jQuery("body").prepend(data);
 		$(".tnth-nav-wrapper").addClass("bootstrap-3 font-awesome-4");
-
+		syncProtectedHeader();
 		
 	}).fail(function(jqXHR, textStatus, errorThrown) {
 
@@ -29,10 +30,12 @@ jQuery(document).ready(function() {
 			contentType : 'text/plain',
 			data: {login_url: LOGIN_URL },
 			crossDomain : true,
+			async:true
 		}, 'html').done(function(data) {
 			
 			jQuery("body").prepend(data);
 			$(".tnth-nav-wrapper").addClass("bootstrap-3 font-awesome-4");
+			syncUnprotectedHeader();
 			
 		});
 	});
