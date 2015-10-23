@@ -2,7 +2,7 @@
 
 <#assign TrueNTHAssociationLocalService=serviceLocator.findService("TrueNTHConnect-portlet","edu.uw.cirg.truenth.sb.service.TrueNTHAssociationLocalService") />
 <#assign trueNTHConnect=utilLocator.findUtil("TrueNTHConnect-portlet","trueNTHConnect") />
-<#assign TrueNTHOAuthConstants=staticUtil["edu.uw.cirg.truenth.oauth.model.TrueNTHOAuthConstants"] />
+<#assign TrueNTHOAuthConstants=staticUtil["edu.uw.cirg.truenth.oauth.model.definitions.TrueNTHOAuthConstants"] />
 <#assign callbackParameters=objectUtil("org.scribe.model.ParameterList") />
 
 <#assign csLocation=trueNTHConnect.getCSBaseURL(themeDisplay.companyId) /> 
