@@ -10,6 +10,7 @@ jQuery(document).ready(function() {
 		type : 'GET',
 		contentType : 'text/plain',
 		crossDomain : true,
+		cache: false,
 		async:true,
 		xhrFields : {
 			withCredentials : true
