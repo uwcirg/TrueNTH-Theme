@@ -54,7 +54,7 @@ ${theme.include(body_top_include)}
 
 	<footer id="footer" role="contentinfo">
 		<p class="powered-by">
-			<@liferay.language key="powered-by" /> <a href="http://cirg.washington.edu" rel="external">CIRG, University of Washington</a>
+			<@liferay.language key="powered-by" /> <a href="https://us.movember.com/programs/prostate-cancer" rel="external">TrueNTH USA</a>	
 		</p>
 	</footer>
 </div>
