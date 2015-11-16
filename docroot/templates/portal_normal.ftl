@@ -14,10 +14,9 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 
 	${theme.include(top_head_include)}
-	
+
 	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
 	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
-    <link href="${csLocation}/static/css/main.css" rel="stylesheet" type="text/css" />
     <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
     <link href="${css_folder}/trueNTH/trueNTHHeader.css"" rel="stylesheet" type="text/css" />
 </head>
@@ -54,7 +53,7 @@ ${theme.include(body_top_include)}
 
 	<footer id="footer" role="contentinfo">
 		<p class="powered-by">
-			<@liferay.language key="powered-by" /> <a href="https://us.movember.com/programs/prostate-cancer" rel="external">TrueNTH USA</a>	
+			<@liferay.language key="powered-by" /> <a href="https://us.movember.com/programs/prostate-cancer" rel="external">TrueNTH USA</a>
 		</p>
 	</footer>
 </div>
