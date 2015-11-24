@@ -13,11 +13,13 @@
 	}
 
 	a {
-		color: #009AE5;
+		/*color: #009AE5;*/
+		color: #497856;
 		font-weight: 200;
 
 		&:hover {
-			color: #009AE5;
+			/*color: #009AE5;*/
+			color: #497856;
 		}
 
 		[class^="icon-"], [class*=" icon-"] {
@@ -117,7 +119,8 @@
 		text-decoration: none;
 
 		&:focus, &:hover {
-			color: #009AE5;
+			/*color: #009AE5;*/
+			color: #497856;
 			text-decoration: none;
 		}
 
@@ -157,7 +160,8 @@
 
 	.navbar .nav > li > a {
 		&:focus, &:hover {
-			color: #009AE5;
+			/*color: #009AE5;*/
+			color: #497856;
 		}
 	}
 
@@ -319,7 +323,8 @@
 				}
 
 				.dropdown-menu, .site-administration-menu {
-					background: #009AE5;
+					/*background: #009AE5; */
+					background: #497856;
 					border-width: 0;
 					left: 0;
 					margin: 0;
@@ -797,7 +802,8 @@
 	.lfr-add-panel {
 		.add-content-menu {
 			.lfr-content-item {
-				color: #009AE5;
+				/*color: #009AE5;*/
+				color: #497856;
 
 				&:focus, &:hover {
 					background-color: #E5F5FC;
@@ -837,7 +843,8 @@
 
 	.lfr-add-panel, .lfr-device-preview-panel, .lfr-edit-layout-panel {
 		&.lfr-admin-panel h1 {
-			color: #009AE5;
+			/*color: #009AE5; */
+			color: #497856;
 			font-size: 26px;
 			font-weight: normal;
 			line-height: 26px;

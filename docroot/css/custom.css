@@ -6,11 +6,19 @@
 @import url(color_schemes/dark.css);
 @import url(color_schemes/light.css);
 
+/*
 $dockbarGradientEnd: #1273C7;
 $dockbarGradientStart: #118ADE;
 
 $dockbarOpenGradientEnd: #0993DD;
 $dockbarOpenGradientStart: #0EA6F9;
+*/
+
+$dockbarGradientEnd: #395E44;
+$dockbarGradientStart: #497856;
+
+$dockbarOpenGradientEnd: #68AA79;
+$dockbarOpenGradientStart: #78C18A;
 
 /* ---------- Base styles ---------- */
 

@@ -18,7 +18,7 @@
 	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
 	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
     <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
-    <link href="${css_folder}/trueNTH/trueNTHHeader.css"" rel="stylesheet" type="text/css" />
+    <link href="${css_folder}/trueNTH/trueNTHHeader.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="${css_class}">
