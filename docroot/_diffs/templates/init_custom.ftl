@@ -20,3 +20,5 @@ ${callbackParameters.add(TrueNTHOAuthConstants.REDIRECT, portalUtil.getCurrentCo
 		<#assign trueNTHId=trueNTHAssociation.trueNTHId>
 	</#if>
 </#if>
+
+${themeDisplay.setShowSignOutIcon(false)}

@@ -6,6 +6,8 @@
 
 <head>
 	<title>${the_title} - ${company_name}</title>
+	
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<meta charset="UTF-8">
 	<meta name="author" content="Victor Soares">
