@@ -21,4 +21,5 @@ ${callbackParameters.add(TrueNTHOAuthConstants.REDIRECT, portalUtil.getCurrentCo
 	</#if>
 </#if>
 
+<#assign layoutGroup = layout.getGroup()>
 ${themeDisplay.setShowSignOutIcon(false)}

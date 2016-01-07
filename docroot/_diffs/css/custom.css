@@ -374,15 +374,8 @@ $dockbarOpenGradientStart: #78C18A;
 
 	/* ---------- Portlet wrapper and icons ---------- */
 
-	.portlet-content, .portlet-minimized .portlet-content-container {
-		border: 1px solid #EAEAEA;
-		border-top-width: 0;
-		padding: 12px 10px 10px;
-	}
-
 	.portlet-topper {
 		background: #D3D3D3;
-		color: #FFF;
 		padding: 0;
 
 		.portlet-title {

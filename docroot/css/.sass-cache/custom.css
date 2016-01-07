@@ -124,6 +124,7 @@
     display: none; } }
 .aui {
   /* ---------- Main ---------- */
+  /* ---------- Portlet ---------- */
   /* ---------- Help icon ---------- */
   /* ---------- Dockbar ---------- */
   /* ---------- Nav#Navigation ---------- */
@@ -133,7 +134,6 @@
   /* ---------- Side accordion navigations ---------- */
   /* ---------- Extras ---------- */ }
   .aui body {
-    color: #555;
     font-weight: 200; }
   .aui a {
     /*color: #009AE5;*/
@@ -144,8 +144,6 @@
       color: #497856; }
     .aui a [class^="icon-"], .aui a [class*=" icon-"] {
       display: inline-block; }
-  .aui .alert, .aui .portlet-msg-alert, .aui .portlet-msg-error, .aui .portlet-msg-help, .aui .portlet-msg-info, .aui .portlet-msg-progress, .aui .portlet-msg-success {
-    word-wrap: break-word; }
   .aui .table {
     font-size: 15px;
     overflow: hidden; }
@@ -233,16 +231,23 @@
   .aui .logo, .aui .logo:hover {
     color: #333;
     line-height: 20px; }
+  .aui .portlet-topper {
+    color: #000; }
+  .aui .alert, .aui .portlet-msg-alert, .aui .portlet-msg-error, .aui .portlet-msg-help, .aui .portlet-msg-info, .aui .portlet-msg-progress, .aui .portlet-msg-success {
+    word-wrap: break-word; }
   .aui .portlet, .aui .portlet-borderless-container {
-    background: #FFF;
-    margin-bottom: 10px;
-    padding: 0; }
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    min-height: 20px;
+    margin: 1em; }
   .aui .portlet-title {
     padding: 0 10px; }
   .aui .portlet-nested-portlets .portlet-body .portlet {
     border: 1px solid #E5E5E5; }
-  .aui .portlet-borderless-container {
-    padding: 10px 0; }
+  .aui .portlet-content, .aui .portlet-borderless-container {
+    padding: 12px 10px 10px; }
   .aui .portlet-options .dropdown-toggle .caret {
     display: none; }
   .aui .taglib-icon-help img {
@@ -707,6 +712,26 @@
   .aui body.yui3-skin-sam .yui3-widget-mask {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
+  .aui .btn-primary {
+    background-color: #33553d;
+    background-image: linear-gradient(to bottom, #33553d, #33553d);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+  .aui .nav-list > .active > a, .aui .nav-list > .active > a:hover, .aui .nav-list > .active > a:focus {
+    background-color: #5aad65;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
+
+body .page-background {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  width: 100%; }
+
+.aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
+  border-width: 0; }
 
 .aui .dark, .aui .light {
   /* ---------- Breadcrumbs ---------- */
@@ -1107,13 +1132,8 @@ $dockbarOpenGradientStart: #0EA6F9;
     margin-bottom: 45px; }
     .aui #breadcrumbs .breadcrumb {
       margin-bottom: 0; }
-  .aui .portlet-content, .aui .portlet-minimized .portlet-content-container {
-    border: 1px solid #EAEAEA;
-    border-top-width: 0;
-    padding: 12px 10px 10px; }
   .aui .portlet-topper {
     background: #D3D3D3;
-    color: #FFF;
     padding: 0; }
     .aui .portlet-topper .portlet-title {
       font-size: 1em;
