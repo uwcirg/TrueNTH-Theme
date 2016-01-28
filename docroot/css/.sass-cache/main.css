@@ -2949,12 +2949,6 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
     color: white;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
 
-body .page-background {
-  height: 100%;
-  left: 0;
-  position: fixed;
-  width: 100%; }
-
 .aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
   border-width: 0; }
 
@@ -3585,4 +3579,59 @@ $dockbarOpenGradientStart: #0EA6F9;
     text-shadow: -1px -1px black; }
   .aui.ie8 .dockbar-split .dockbar .navbar-inner .info-button a {
     margin-top: -2px; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%; }
+
+.trueNTH.aui body {
+  background-color: #9aa19a; }
+.trueNTH.aui .tnth-nav-wrapper {
+  width: 100%;
+  background-color: #1a1919; }
+.trueNTH.aui .tnth-nav-main {
+  width: 100%; }
+.trueNTH.aui .tnth-nav-xs {
+  margin: 0 0 5px; }
+  .trueNTH.aui .tnth-nav-xs .navbar-brand {
+    padding: 4px; }
+  .trueNTH.aui .tnth-nav-xs .navbar-brand img {
+    height: 54px; }
+  .trueNTH.aui .tnth-nav-xs .nav a {
+    color: #fff; }
+  .trueNTH.aui .tnth-nav-xs .nav a:active, .trueNTH.aui .tnth-nav-xs .aui .tnth-nav-xs .nav a:hover {
+    color: #333; }
+.trueNTH.aui .tnth-white {
+  color: #ecf7e5;
+  background-color: transparent;
+  border-color: transparent;
+  transition: all .2s ease-in-out 0s;
+  -webkit-transition: all .2s ease-in-out 0s;
+  text-shadow: none;
+  background-image: none; }
+.trueNTH.aui .tnth-white:hover, .trueNTH.aui .tnth-white:focus, .trueNTH.aui .tnth-white.active {
+  color: #333;
+  background-color: white; }
+.trueNTH.aui .tnth-white.navbar-toggle {
+  margin: 8px 15px 8px 0; }
+.trueNTH.aui .tnth-search {
+  display: inline-block;
+  padding: 0; }
+.trueNTH.aui .tnth-show-search {
+  height: 43px; }
+.trueNTH.aui .hide-initial, .trueNTH.aui .form-group.hide-initial {
+  display: none; }
+.trueNTH.aui #navigation .navbar-inner {
+  color: #fff;
+  background: #83885f none repeat scroll 0 0;
+  text-decoration: none;
+  border-radius: 4px;
+  border-width: 0;
+  min-height: 36px; }
+.trueNTH.aui #navigation .nav > .active > a {
+  background-color: #f5f5f5;
+  background-image: none;
+  box-shadow: none;
+  color: #555; }
 

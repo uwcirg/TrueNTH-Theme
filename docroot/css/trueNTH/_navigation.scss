@@ -1,0 +1,19 @@
+#navigation{
+	
+	.navbar-inner {
+		color: #fff;
+	    background: #83885f none repeat scroll 0 0;
+	    text-decoration: none;
+	    border-radius: 4px;
+	    border-width: 0;
+	    min-height: 36px;
+	}
+	
+ 	.nav > .active > a {
+	    background-color: #f5f5f5;
+	    background-image: none;
+	    box-shadow: none;
+	    color: #555;
+	}
+
+}

@@ -2,7 +2,7 @@
 
 <#include init />
 
-<html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
+<html class="trueNTH ${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
 
 <head>
 	<title>${the_title} - ${company_name}</title>
@@ -20,15 +20,12 @@
 	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
 	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
     <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
-    <link href="${css_folder}/trueNTH/trueNTHHeader.css" rel="stylesheet" type="text/css" />
     <link href="${csLocation}/static/css/liferay.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="${css_class}">
 
 <a href="#main-content" id="skip-to-content"><@liferay.language key="skip-to-content" /></a>
-
-<img class="page-background hidden-xs" src="${csLocation}/static/img/TrueNthHoldBackground.jpg">
 
 ${theme.include(body_top_include)}
 

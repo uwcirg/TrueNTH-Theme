@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%; 
+}
+	
+.trueNTH.aui {	
+	body { 
+		background-color:#9aa19a;
+	}
+	
+	@import "trueNTH/header";
+	@import "trueNTH/navigation";
+}

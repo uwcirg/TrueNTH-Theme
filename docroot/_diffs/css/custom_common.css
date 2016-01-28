@@ -1006,14 +1006,6 @@
 	}
 }
 
-
-body .page-background {
-    height: 100%;
-    left: 0;
-    position: fixed;
-    width: 100%;
-}
-
 .aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
   border-width: 0;
 }
