@@ -17,7 +17,7 @@
 
 	${theme.include(top_head_include)}
 	
-	<#if !layoutGroup.isControlPanel()>
+	<#if showHeader>
 		<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
 		<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
 	    <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
@@ -31,10 +31,8 @@
 
 ${theme.include(body_top_include)}
 
-<#if !layoutGroup.isControlPanel()>
-	<#if is_signed_in>
+<#if showDockBar>
 		<@liferay.dockbar />
-	</#if>
 </#if>
 
 <div class="container-fluid" id="wrapper">
@@ -68,7 +66,7 @@ ${theme.include(body_bottom_include)}
 
 ${theme.include(bottom_include)}
 
-<#if !layoutGroup.isControlPanel()>
+<#if showHeader>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<#include "${full_templates_path}/js/trueNTH/trueNTHDefinitions.ftl" />
 	<#include "${full_templates_path}/js/trueNTH/trueNTHHeaderIntegration.ftl" />

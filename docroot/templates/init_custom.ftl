@@ -10,16 +10,21 @@
 ${callbackParameters.add(TrueNTHOAuthConstants.REDIRECT, portalUtil.getCurrentCompleteURL(request))}	
 <#assign trueNTHConnectLoginURL = trueNTHConnect.getAuthorizationUrl(themeDisplay.companyId,1, callbackParameters) />
 
-<#assign trueNTHConnectLogoutURL = themeDisplay.getURLSignOut() >
+<#assign trueNTHConnectLogoutURL = themeDisplay.getURLSignOut() />
 
 <#if themeDisplay.userId??>
-	<#assign trueNTHAssociation=TrueNTHAssociationLocalService.getByUserId(themeDisplay.userId)!''>
-	<#assign isTrueNTHUser=trueNTHAssociation?has_content>
+	<#assign trueNTHAssociation=TrueNTHAssociationLocalService.getByUserId(themeDisplay.userId)!'' />
+	<#assign isTrueNTHUser=trueNTHAssociation?has_content />
 	
 	<#if isTrueNTHUser>
-		<#assign trueNTHId=trueNTHAssociation.trueNTHId>
+		<#assign trueNTHId=trueNTHAssociation.trueNTHId />
 	</#if>
 </#if>
 
 <#assign layoutGroup = layout.getGroup()>
+
 ${themeDisplay.setShowSignOutIcon(false)}
+
+<#assign control_panel_category = htmlUtil.escape(themeDisplay.getControlPanelCategory()) />
+<#assign showHeader = !layoutGroup.isControlPanel() || control_panel_category != "my" || !getterUtil.getBoolean(propsUtil.get("dockbar.administrative.links.show.in.pop.up"))>
+<#assign showDockBar = is_signed_in && showHeader>
