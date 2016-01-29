@@ -17,10 +17,12 @@
 
 	${theme.include(top_head_include)}
 	
-	<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
-	<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
-    <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
-    <link href="${csLocation}/static/css/liferay.css" rel="stylesheet" type="text/css" />
+	<#if !layoutGroup.isControlPanel()>
+		<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
+		<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
+	    <link href="${csLocation}/static/css/topnav.css" rel="stylesheet" type="text/css" />
+	    <link href="${csLocation}/static/css/liferay.css" rel="stylesheet" type="text/css" />
+    </#if>
 </head>
 
 <body class="${css_class}">
@@ -29,8 +31,10 @@
 
 ${theme.include(body_top_include)}
 
-<#if is_signed_in>
-	<@liferay.dockbar />
+<#if !layoutGroup.isControlPanel()>
+	<#if is_signed_in>
+		<@liferay.dockbar />
+	</#if>
 </#if>
 
 <div class="container-fluid" id="wrapper">
@@ -64,12 +68,12 @@ ${theme.include(body_bottom_include)}
 
 ${theme.include(bottom_include)}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<#include "${full_templates_path}/js/trueNTH/trueNTHDefinitions.ftl" />
-<#include "${full_templates_path}/js/trueNTH/trueNTHHeaderIntegration.ftl" />
-<script src="${javascript_folder}/trueNTH/trueNTHHeader.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+<#if !layoutGroup.isControlPanel()>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<#include "${full_templates_path}/js/trueNTH/trueNTHDefinitions.ftl" />
+	<#include "${full_templates_path}/js/trueNTH/trueNTHHeaderIntegration.ftl" />
+	<script src="${javascript_folder}/trueNTH/trueNTHHeader.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</#if>
 </body>
 </html>
