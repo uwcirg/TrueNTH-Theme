@@ -124,6 +124,7 @@
     display: none; } }
 .aui {
   /* ---------- Main ---------- */
+  /* ---------- Portlet ---------- */
   /* ---------- Help icon ---------- */
   /* ---------- Dockbar ---------- */
   /* ---------- Nav#Navigation ---------- */
@@ -133,17 +134,16 @@
   /* ---------- Side accordion navigations ---------- */
   /* ---------- Extras ---------- */ }
   .aui body {
-    color: #555;
     font-weight: 200; }
   .aui a {
-    color: #009AE5;
+    /*color: #009AE5;*/
+    color: #497856;
     font-weight: 200; }
     .aui a:hover {
-      color: #009AE5; }
+      /*color: #009AE5;*/
+      color: #497856; }
     .aui a [class^="icon-"], .aui a [class*=" icon-"] {
       display: inline-block; }
-  .aui .alert, .aui .portlet-msg-alert, .aui .portlet-msg-error, .aui .portlet-msg-help, .aui .portlet-msg-info, .aui .portlet-msg-progress, .aui .portlet-msg-success {
-    word-wrap: break-word; }
   .aui .table {
     font-size: 15px;
     overflow: hidden; }
@@ -194,7 +194,8 @@
     color: #555;
     text-decoration: none; }
     .aui .btn-link:focus, .aui .btn-link:hover {
-      color: #009AE5;
+      /*color: #009AE5;*/
+      color: #497856;
       text-decoration: none; }
     .aui .btn-link > i {
       height: auto;
@@ -219,7 +220,8 @@
         -webkit-font-smoothing: antialiased;
         *margin-right: .3em; } }
   .aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
-    color: #009AE5; }
+    /*color: #009AE5;*/
+    color: #497856; }
   .aui .lfr-tree .tree-node .tree-node-selected .tree-label {
     background: #E4F5FC; }
   .aui .previous-level:focus {
@@ -229,16 +231,23 @@
   .aui .logo, .aui .logo:hover {
     color: #333;
     line-height: 20px; }
+  .aui .portlet-topper {
+    color: #000; }
+  .aui .alert, .aui .portlet-msg-alert, .aui .portlet-msg-error, .aui .portlet-msg-help, .aui .portlet-msg-info, .aui .portlet-msg-progress, .aui .portlet-msg-success {
+    word-wrap: break-word; }
   .aui .portlet, .aui .portlet-borderless-container {
-    background: #FFF;
-    margin-bottom: 10px;
-    padding: 0; }
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    min-height: 20px;
+    margin: 1em; }
   .aui .portlet-title {
     padding: 0 10px; }
   .aui .portlet-nested-portlets .portlet-body .portlet {
     border: 1px solid #E5E5E5; }
-  .aui .portlet-borderless-container {
-    padding: 10px 0; }
+  .aui .portlet-content, .aui .portlet-borderless-container {
+    padding: 12px 10px 10px; }
   .aui .portlet-options .dropdown-toggle .caret {
     display: none; }
   .aui .taglib-icon-help img {
@@ -284,7 +293,8 @@
     background-color: #3EA9DB;
     color: #FFF; }
   .aui .dockbar .nav li.dropdown .dropdown-menu, .aui .dockbar .nav li.dropdown .site-administration-menu {
-    background: #009AE5;
+    /*background: #009AE5; */
+    background: #497856;
     border-width: 0;
     left: 0;
     margin: 0;
@@ -559,7 +569,8 @@
     .aui .add-content-menu .accordion .toggler-content-expanded, .aui .lfr-edit-layout-panel .accordion .toggler-content-expanded, .aui .panel-page-menu .portlet-borderless-container .accordion .toggler-content-expanded {
       border-width: 0; }
   .aui .lfr-add-panel .add-content-menu .lfr-content-item {
-    color: #009AE5; }
+    /*color: #009AE5;*/
+    color: #497856; }
     .aui .lfr-add-panel .add-content-menu .lfr-content-item:focus, .aui .lfr-add-panel .add-content-menu .lfr-content-item:hover {
       background-color: #E5F5FC; }
     .aui .lfr-add-panel .add-content-menu .lfr-content-item.lfr-portlet-used {
@@ -572,7 +583,8 @@
   .aui .lfr-add-panel .lfr-page-template .lfr-page-template-title.active:before {
     color: #FFF; }
   .aui .lfr-add-panel.lfr-admin-panel h1, .aui .lfr-device-preview-panel.lfr-admin-panel h1, .aui .lfr-edit-layout-panel.lfr-admin-panel h1 {
-    color: #009AE5;
+    /*color: #009AE5; */
+    color: #497856;
     font-size: 26px;
     font-weight: normal;
     line-height: 26px; }
@@ -700,4 +712,18 @@
   .aui body.yui3-skin-sam .yui3-widget-mask {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
+  .aui .btn-primary {
+    background-color: #33553d;
+    background-image: linear-gradient(to bottom, #33553d, #33553d);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+  .aui .nav-list > .active > a, .aui .nav-list > .active > a:hover, .aui .nav-list > .active > a:focus {
+    background-color: #5aad65;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
+
+.aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
+  border-width: 0; }
 
