@@ -124,7 +124,6 @@
     display: none; } }
 .aui {
   /* ---------- Main ---------- */
-  /* ---------- Portlet ---------- */
   /* ---------- Help icon ---------- */
   /* ---------- Dockbar ---------- */
   /* ---------- Nav#Navigation ---------- */
@@ -134,16 +133,17 @@
   /* ---------- Side accordion navigations ---------- */
   /* ---------- Extras ---------- */ }
   .aui body {
+    color: #555;
     font-weight: 200; }
   .aui a {
-    /*color: #009AE5;*/
-    color: #497856;
+    color: #009AE5;
     font-weight: 200; }
     .aui a:hover {
-      /*color: #009AE5;*/
-      color: #497856; }
+      color: #009AE5; }
     .aui a [class^="icon-"], .aui a [class*=" icon-"] {
       display: inline-block; }
+  .aui .alert, .aui .portlet-msg-alert, .aui .portlet-msg-error, .aui .portlet-msg-help, .aui .portlet-msg-info, .aui .portlet-msg-progress, .aui .portlet-msg-success {
+    word-wrap: break-word; }
   .aui .table {
     font-size: 15px;
     overflow: hidden; }
@@ -194,8 +194,7 @@
     color: #555;
     text-decoration: none; }
     .aui .btn-link:focus, .aui .btn-link:hover {
-      /*color: #009AE5;*/
-      color: #497856;
+      color: #009AE5;
       text-decoration: none; }
     .aui .btn-link > i {
       height: auto;
@@ -220,8 +219,7 @@
         -webkit-font-smoothing: antialiased;
         *margin-right: .3em; } }
   .aui .navbar .nav > li > a:focus, .aui .navbar .nav > li > a:hover {
-    /*color: #009AE5;*/
-    color: #497856; }
+    color: #009AE5; }
   .aui .lfr-tree .tree-node .tree-node-selected .tree-label {
     background: #E4F5FC; }
   .aui .previous-level:focus {
@@ -231,23 +229,16 @@
   .aui .logo, .aui .logo:hover {
     color: #333;
     line-height: 20px; }
-  .aui .portlet-topper {
-    color: #000; }
-  .aui .alert, .aui .portlet-msg-alert, .aui .portlet-msg-error, .aui .portlet-msg-help, .aui .portlet-msg-info, .aui .portlet-msg-progress, .aui .portlet-msg-success {
-    word-wrap: break-word; }
   .aui .portlet, .aui .portlet-borderless-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-    min-height: 20px;
-    margin: 1em; }
+    background: #FFF;
+    margin-bottom: 10px;
+    padding: 0; }
   .aui .portlet-title {
     padding: 0 10px; }
   .aui .portlet-nested-portlets .portlet-body .portlet {
     border: 1px solid #E5E5E5; }
-  .aui .portlet-content, .aui .portlet-borderless-container {
-    padding: 12px 10px 10px; }
+  .aui .portlet-borderless-container {
+    padding: 10px 0; }
   .aui .portlet-options .dropdown-toggle .caret {
     display: none; }
   .aui .taglib-icon-help img {
@@ -293,8 +284,7 @@
     background-color: #3EA9DB;
     color: #FFF; }
   .aui .dockbar .nav li.dropdown .dropdown-menu, .aui .dockbar .nav li.dropdown .site-administration-menu {
-    /*background: #009AE5; */
-    background: #497856;
+    background: #009AE5;
     border-width: 0;
     left: 0;
     margin: 0;
@@ -569,8 +559,7 @@
     .aui .add-content-menu .accordion .toggler-content-expanded, .aui .lfr-edit-layout-panel .accordion .toggler-content-expanded, .aui .panel-page-menu .portlet-borderless-container .accordion .toggler-content-expanded {
       border-width: 0; }
   .aui .lfr-add-panel .add-content-menu .lfr-content-item {
-    /*color: #009AE5;*/
-    color: #497856; }
+    color: #009AE5; }
     .aui .lfr-add-panel .add-content-menu .lfr-content-item:focus, .aui .lfr-add-panel .add-content-menu .lfr-content-item:hover {
       background-color: #E5F5FC; }
     .aui .lfr-add-panel .add-content-menu .lfr-content-item.lfr-portlet-used {
@@ -583,8 +572,7 @@
   .aui .lfr-add-panel .lfr-page-template .lfr-page-template-title.active:before {
     color: #FFF; }
   .aui .lfr-add-panel.lfr-admin-panel h1, .aui .lfr-device-preview-panel.lfr-admin-panel h1, .aui .lfr-edit-layout-panel.lfr-admin-panel h1 {
-    /*color: #009AE5; */
-    color: #497856;
+    color: #009AE5;
     font-size: 26px;
     font-weight: normal;
     line-height: 26px; }
@@ -712,20 +700,6 @@
   .aui body.yui3-skin-sam .yui3-widget-mask {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
-  .aui .btn-primary {
-    background-color: #33553d;
-    background-image: linear-gradient(to bottom, #33553d, #33553d);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
-  .aui .nav-list > .active > a, .aui .nav-list > .active > a:hover, .aui .nav-list > .active > a:focus {
-    background-color: #5aad65;
-    color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
-
-.aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
-  border-width: 0; }
 
 .aui .dark, .aui .light {
   /* ---------- Breadcrumbs ---------- */
@@ -918,13 +892,6 @@
   .aui .light .columns-max .portlet .portlet-topper-toolbar a {
     color: #555; }
 
-/*
-$dockbarGradientEnd: #1273C7;
-$dockbarGradientStart: #118ADE;
-
-$dockbarOpenGradientEnd: #0993DD;
-$dockbarOpenGradientStart: #0EA6F9;
-*/
 /* ---------- Base styles ---------- */
 .aui {
   /* ---------- Dockbar ---------- */
@@ -1008,19 +975,19 @@ $dockbarOpenGradientStart: #0EA6F9;
       background: transparent;
       text-decoration: underline; }
   .aui .dockbar .navbar-inner, .aui .dockbar-split .dockbar .navbar-inner {
-    background-color: #497856;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #497856), color-stop(47%, #497856), color-stop(100%, #395e44));
-    background-image: -webkit-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-    background-image: -moz-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-    background-image: -o-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-    background-image: linear-gradient(#497856 0%, #497856 47%, #395e44 100%); }
+    background-color: #118ade;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #118ade), color-stop(47%, #118ade), color-stop(100%, #1273c7));
+    background-image: -webkit-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+    background-image: -moz-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+    background-image: -o-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+    background-image: linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%); }
     .aui .dockbar .navbar-inner .nav > li, .aui .dockbar-split .dockbar .navbar-inner .nav > li {
-      background-color: #497856;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #497856), color-stop(47%, #497856), color-stop(100%, #395e44));
-      background-image: -webkit-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-      background-image: -moz-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-      background-image: -o-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-      background-image: linear-gradient(#497856 0%, #497856 47%, #395e44 100%); }
+      background-color: #118ade;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #118ade), color-stop(47%, #118ade), color-stop(100%, #1273c7));
+      background-image: -webkit-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+      background-image: -moz-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+      background-image: -o-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+      background-image: linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%); }
   .aui .dockbar-split .dockbar .info-button {
     top: 9px; }
   .aui .dockbar-split .dockbar .navbar-inner .nav-account-controls {
@@ -1077,7 +1044,7 @@ $dockbarOpenGradientStart: #0EA6F9;
     background-color: #A3A3A3;
     color: #FFF; }
   .aui #navigation .nav li.active > a {
-    background-color: #497856; }
+    background-color: #118ade; }
   .aui #navigation .nav > li > a {
     padding: 4px 15px 5px; }
   .aui #navigation .nav .dropdown-menu {
@@ -1126,8 +1093,13 @@ $dockbarOpenGradientStart: #0EA6F9;
     margin-bottom: 45px; }
     .aui #breadcrumbs .breadcrumb {
       margin-bottom: 0; }
+  .aui .portlet-content, .aui .portlet-minimized .portlet-content-container {
+    border: 1px solid #EAEAEA;
+    border-top-width: 0;
+    padding: 12px 10px 10px; }
   .aui .portlet-topper {
     background: #D3D3D3;
+    color: #FFF;
     padding: 0; }
     .aui .portlet-topper .portlet-title {
       font-size: 1em;
@@ -1229,17 +1201,17 @@ $dockbarOpenGradientStart: #0EA6F9;
     -o-border-radius: 0;
     border-radius: 0; }
   .aui #navigation .nav > .active > a {
-    background-color: #497856;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #497856), color-stop(47%, #497856), color-stop(100%, #395e44));
-    background-image: -webkit-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-    background-image: -moz-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-    background-image: -o-linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
-    background-image: linear-gradient(#497856 0%, #497856 47%, #395e44 100%);
+    background-color: #118ade;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #118ade), color-stop(47%, #118ade), color-stop(100%, #1273c7));
+    background-image: -webkit-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+    background-image: -moz-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+    background-image: -o-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
+    background-image: linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF497856', endColorstr='#FF395E44'); }
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF118ADE', endColorstr='#FF1273C7'); }
   .aui #navigation .navbar-inner {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1324,19 +1296,19 @@ $dockbarOpenGradientStart: #0EA6F9;
     text-shadow: none; }
     @media (max-width: 979px) {
       .aui .dockbar-split .dockbar .navbar-inner {
-        background-color: #497856;
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #497856), color-stop(100%, #395e44));
-        background-image: -webkit-linear-gradient(#497856, #395e44);
-        background-image: -moz-linear-gradient(#497856, #395e44);
-        background-image: -o-linear-gradient(#497856, #395e44);
-        background-image: linear-gradient(#497856, #395e44); } }
+        background-color: #118ade;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #118ade), color-stop(100%, #1273c7));
+        background-image: -webkit-linear-gradient(#118ade, #1273c7);
+        background-image: -moz-linear-gradient(#118ade, #1273c7);
+        background-image: -o-linear-gradient(#118ade, #1273c7);
+        background-image: linear-gradient(#118ade, #1273c7); } }
     .aui .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
-      background-color: #78c18a;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78c18a), color-stop(100%, #68aa79));
-      background-image: -webkit-linear-gradient(#78c18a, #68aa79);
-      background-image: -moz-linear-gradient(#78c18a, #68aa79);
-      background-image: -o-linear-gradient(#78c18a, #68aa79);
-      background-image: linear-gradient(#78c18a, #68aa79);
+      background-color: #0ea6f9;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0ea6f9), color-stop(100%, #0993dd));
+      background-image: -webkit-linear-gradient(#0ea6f9, #0993dd);
+      background-image: -moz-linear-gradient(#0ea6f9, #0993dd);
+      background-image: -o-linear-gradient(#0ea6f9, #0993dd);
+      background-image: linear-gradient(#0ea6f9, #0993dd);
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; }
