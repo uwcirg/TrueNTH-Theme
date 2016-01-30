@@ -6,11 +6,19 @@
 @import url(color_schemes/dark.css);
 @import url(color_schemes/light.css);
 
+/*
 $dockbarGradientEnd: #1273C7;
 $dockbarGradientStart: #118ADE;
 
 $dockbarOpenGradientEnd: #0993DD;
 $dockbarOpenGradientStart: #0EA6F9;
+*/
+
+$dockbarGradientEnd: #395E44;
+$dockbarGradientStart: #497856;
+
+$dockbarOpenGradientEnd: #68AA79;
+$dockbarOpenGradientStart: #78C18A;
 
 /* ---------- Base styles ---------- */
 
@@ -366,15 +374,8 @@ $dockbarOpenGradientStart: #0EA6F9;
 
 	/* ---------- Portlet wrapper and icons ---------- */
 
-	.portlet-content, .portlet-minimized .portlet-content-container {
-		border: 1px solid #EAEAEA;
-		border-top-width: 0;
-		padding: 12px 10px 10px;
-	}
-
 	.portlet-topper {
 		background: #D3D3D3;
-		color: #FFF;
 		padding: 0;
 
 		.portlet-title {

@@ -19,8 +19,7 @@ jQuery(document).ready(function() {
 
 	.done(function(data) {
 		
-		jQuery("body").prepend(data);
-		$(".tnth-nav-wrapper").addClass("bootstrap-3 font-awesome-4");
+		jQuery("#pageHeader").prepend(data);
 		syncProtectedHeader();
 		
 	}).fail(function(jqXHR, textStatus, errorThrown) {
@@ -34,8 +33,7 @@ jQuery(document).ready(function() {
 			async:true
 		}, 'html').done(function(data) {
 			
-			jQuery("body").prepend(data);
-			$(".tnth-nav-wrapper").addClass("bootstrap-3 font-awesome-4");
+			jQuery("#pageHeader").prepend(data);
 			syncUnprotectedHeader();
 			
 		});

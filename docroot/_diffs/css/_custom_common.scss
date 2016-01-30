@@ -8,27 +8,24 @@
 
 .aui {
 	body {
-		color: #555;
 		font-weight: 200;
 	}
-
+	
 	a {
-		color: #009AE5;
+		/*color: #009AE5;*/
+		color: #497856;
 		font-weight: 200;
 
 		&:hover {
-			color: #009AE5;
+			/*color: #009AE5;*/
+			color: #497856;
 		}
 
 		[class^="icon-"], [class*=" icon-"] {
 			display: inline-block;
 		}
 	}
-
-	.alert, .portlet-msg-alert, .portlet-msg-error, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress, .portlet-msg-success {
-		word-wrap: break-word;
-	}
-
+	
 	.table {
 		font-size: 15px;
 		overflow: hidden;
@@ -117,7 +114,8 @@
 		text-decoration: none;
 
 		&:focus, &:hover {
-			color: #009AE5;
+			/*color: #009AE5;*/
+			color: #497856;
 			text-decoration: none;
 		}
 
@@ -157,7 +155,8 @@
 
 	.navbar .nav > li > a {
 		&:focus, &:hover {
-			color: #009AE5;
+			/*color: #009AE5;*/
+			color: #497856;
 		}
 	}
 
@@ -182,10 +181,23 @@
 		line-height: 20px;
 	}
 
+	/* ---------- Portlet ---------- */
+		
+	.portlet-topper {
+	    color: #000;
+	}
+
+	.alert, .portlet-msg-alert, .portlet-msg-error, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress, .portlet-msg-success {
+		word-wrap: break-word;
+	}
+	
 	.portlet, .portlet-borderless-container {
-		background: #FFF;
-		margin-bottom: 10px;
-		padding: 0;
+		background-color: rgba(255, 255, 255, 0.8);
+	    border: 1px solid #e3e3e3;
+	    border-radius: 4px;
+	    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+	    min-height: 20px;
+	    margin: 1em;
 	}
 
 	.portlet-title {
@@ -196,8 +208,8 @@
 		border: 1px solid #E5E5E5;
 	}
 
-	.portlet-borderless-container {
-		padding: 10px 0;
+	.portlet-content, .portlet-borderless-container {
+		padding: 12px 10px 10px;
 	}
 
 	.portlet-options {
@@ -319,7 +331,8 @@
 				}
 
 				.dropdown-menu, .site-administration-menu {
-					background: #009AE5;
+					/*background: #009AE5; */
+					background: #497856;
 					border-width: 0;
 					left: 0;
 					margin: 0;
@@ -797,7 +810,8 @@
 	.lfr-add-panel {
 		.add-content-menu {
 			.lfr-content-item {
-				color: #009AE5;
+				/*color: #009AE5;*/
+				color: #497856;
 
 				&:focus, &:hover {
 					background-color: #E5F5FC;
@@ -837,7 +851,8 @@
 
 	.lfr-add-panel, .lfr-device-preview-panel, .lfr-edit-layout-panel {
 		&.lfr-admin-panel h1 {
-			color: #009AE5;
+			/*color: #009AE5; */
+			color: #497856;
 			font-size: 26px;
 			font-weight: normal;
 			line-height: 26px;
@@ -975,4 +990,22 @@
 	body.yui3-skin-sam .yui3-widget-mask {
 		@include opacity(0.8);
 	}
+	
+	.btn-primary {
+	  background-color: #33553d;
+	  background-image: linear-gradient(to bottom, #33553d, #33553d);
+	  background-repeat: repeat-x;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  color: white;
+	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	}
+	.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
+	    background-color: #5aad65;
+	    color: white;
+	    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	}
+}
+
+.aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
+  border-width: 0;
 }

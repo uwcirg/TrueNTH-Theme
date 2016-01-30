@@ -28,3 +28,7 @@ ${themeDisplay.setShowSignOutIcon(false)}
 <#assign control_panel_category = htmlUtil.escape(themeDisplay.getControlPanelCategory()) />
 <#assign showHeader = !layoutGroup.isControlPanel() || control_panel_category != "my" || !getterUtil.getBoolean(propsUtil.get("dockbar.administrative.links.show.in.pop.up"))>
 <#assign showDockBar = is_signed_in && showHeader>
+
+<#if showDockBar>
+	<#assign contentClass = "withDock" />
+</#if>

@@ -1,17 +1,17 @@
-@import url(base.css);
+@import "base";
 
-@import url(application.css);
+@import "application";
 
-@import url(layout.css);
+@import "layout";
 
-@import url(dockbar.css);
+@import "dockbar";
 
-@import url(navigation.css);
+@import "navigation";
 
-@import url(portlet.css);
+@import "portlet";
 
-@import url(extras.css);
+@import "extras";
 
-@import url(custom.css);
+@import "custom";
 
-@import url(trueNTH/trueNTH.css);
+@import "trueNTH/trueNTH";
