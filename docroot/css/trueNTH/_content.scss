@@ -1,32 +1,29 @@
-#pageContent {
-    position: relative;
-    top: -15px;
-}
-
-#pageContent.withDock {
-    top: -40px;
-}
-
 .dockbar{
 	margin-left: auto;
     margin-right: auto;
 }
 
-.dockbar.navbar .navbar-inner {
-    padding-left: 110px;
+#pageContent {
+    position: relative;
+    top: -35px;
+    
+    @include respond-to(phone) {
+		top: -5px;
+	}
+
+	@include respond-to(tablet) {
+		top: -25px;
+	}
 }
 
-@media (min-width: 1200px) {
-	
-	#pageContent {
-	    top: -25px;
+#pageContent.withDock {
+    top: -40px;
+    
+    @include respond-to(phone) {
+		top: -5px;
 	}
-	
-	#pageContent.withDock{
-	    top: -50px;
-	}
-	
-	.dockbar.navbar .navbar-inner {
-    	padding-left: 220px;
+
+	@include respond-to(tablet) {
+		top: -40px;
 	}
 }

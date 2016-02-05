@@ -18,15 +18,15 @@
 	${theme.include(top_head_include)}
 	
 	<#if showHeader>
-		<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3-iso.min.css" rel="stylesheet" />
-		<link href="${css_folder}/font-awesome-4.4.0/css/font-awesome4-iso.min.css" rel="stylesheet" />
+		<link href="${css_folder}/bootstrap-3.3.5/css/bootstrap3.css" rel="stylesheet" />
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	    <link href="${csLocation}/static/css/liferay.css" rel="stylesheet" type="text/css" />
     </#if>
 </head>
 
 <body class="${css_class}">
 
-<header id="pageHeader" class="bootstrap-3 font-awesome-4"></header>
+<header id="pageHeader" class="bootstrap-3"></header>
 
 <main id="pageContent" class="${contentClass!""}">
 
