@@ -130,13 +130,7 @@
   Instead of a list of all class selectors,
   you can use the generic selector below, but it's slower:
   [class*="icon-"] {
-  */
-  background-color: white;
-  color: #333333;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0; }
+  */ }
   .aui article,
   .aui aside,
   .aui details,
