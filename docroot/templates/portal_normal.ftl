@@ -44,7 +44,9 @@
 		</header>
 	
 		<div id="content">
-	
+			
+			<#include "${full_templates_path}/messages.ftl" />
+			
 			<#if selectable>
 				${theme.include(content_include)}
 			<#else>
