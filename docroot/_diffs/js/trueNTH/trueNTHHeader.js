@@ -1,20 +1,19 @@
-jQuery.ajax({
+$.ajax({
 	url : PROTECTED_PORTAL_NAV_PAGE,
 	crossDomain : true,
 	cache : false,
-	async : true,
 	xhrFields : {
 		withCredentials : true
 	},
 	success : function(data) {
 
-		jQuery("#pageHeader").prepend(data);
+		$("#pageHeader").prepend(data);
 		syncProtectedHeader();
 
 	},
 	error : function(jqXHR, textStatus, errorThrown) {
 
-		jQuery.ajax({
+		$.ajax({
 			url : UNPROTECTED_PORTAL_NAV_PAGE,
 			crossDomain : true,
 			contentType : 'text/plain',
@@ -23,10 +22,15 @@ jQuery.ajax({
 			},
 			success : function(data) {
 
-				jQuery("#pageHeader").prepend(data);
+				$("#pageHeader").prepend(data);
 				syncUnprotectedHeader();
 
 			}
+		})
+	},
+	complete : function(jqXHR, textStatus) {
+		$.get(window.location.href, "sync", function(data) {
+			$("body").append(data);
 		})
 	}
 })
