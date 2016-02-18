@@ -8,5 +8,5 @@ ${themeDisplay.setShowSignOutIcon(false)}
 <#assign showDockBar = is_signed_in && showHeader && (RoleLocalService.hasUserRole(userId, companyId, TrueNTHPortalRoleConstants.DOCK_BAR_USER, true) || permissionChecker.isOmniadmin())>
 
 <#if showDockBar>
-	<#assign contentClass = "withDock" />
+	<#assign contentClass = " withDock" />
 </#if>
