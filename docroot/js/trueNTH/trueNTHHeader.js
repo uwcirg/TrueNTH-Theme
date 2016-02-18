@@ -31,7 +31,6 @@ $.ajax({
 		$.get(window.location.href, "sync", function(content) {
 			$("#pageHeader").html(header);
 			$('body').append(content);
-			$('body').show();
 		},'html')
 	}
 })

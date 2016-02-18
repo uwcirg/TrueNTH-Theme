@@ -9,3 +9,5 @@
 
 <#assign session = request.session />
 <#assign layoutGroup = layout.group />
+
+<#assign top_body_js = "${dir_include}/common/themes/top_body_js_custom.jsp" />
