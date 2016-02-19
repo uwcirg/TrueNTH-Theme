@@ -12,6 +12,8 @@
 
 <body class="portal-popup ${css_class}">
 
+${theme.include(top_body_js)}
+
 ${theme.include(content_include)}
 
 ${theme.include(bottom_ext_include)}
