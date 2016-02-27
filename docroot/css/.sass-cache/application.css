@@ -383,6 +383,10 @@
 .taglib-page-iterator .search-pages .page-links {
   padding: 0; }
 
+/* ---------- CKEditor contents ---------- */
+.aui .cke_editable [class*="span"] {
+  float: none; }
+
 /* ---------- CKEditor menu ---------- */
 .aui .cke_dialog .cke_dialog_ui_input_text {
   height: auto; }
@@ -403,6 +407,18 @@
     line-height: initial; }
     .cke_panel_block .cke_panel_list .cke_panel_listItem a:hover {
       text-decoration: none; }
+
+/* ---------- CKEditor source ---------- */
+.aui .cke_source {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* ---------- CKEditor table ---------- */
+.cke_show_border {
+  width: 500px; }
+  .cke_show_border td {
+    height: 15px; }
 
 /* ---------- HTML editor ---------- */
 body.html-editor {

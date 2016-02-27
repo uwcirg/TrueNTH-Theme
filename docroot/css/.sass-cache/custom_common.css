@@ -2,6 +2,8 @@
 @media (max-width: 979px) {
   .aui * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .aui .dialog-iframe-popup {
+    padding: 0; }
   .aui #heading {
     bottom: 100%;
     margin-top: -2em;
@@ -39,7 +41,7 @@
       width: auto; }
       .aui .dockbar-split .dockbar .navbar-inner .btn-navbar, .aui .dockbar .navbar-inner .btn-navbar {
         background: transparent;
-        border: none;
+        border-width: 0;
         float: left;
         font-size: 24px;
         padding: 12px 15px; }
@@ -54,9 +56,9 @@
       .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls, .aui .dockbar .navbar-inner .nav-add-controls {
         background: transparent;
         border-top-width: 0;
+        padding: 0 5px;
         position: static;
-        z-index: 350;
-        padding: 0 5px; }
+        z-index: 350; }
         .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li, .aui .dockbar .navbar-inner .nav-add-controls > li {
           float: none;
           margin: 0;
@@ -72,7 +74,7 @@
             text-align: left;
             white-space: nowrap; }
             .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a:hover, .aui .dockbar .navbar-inner .nav-add-controls > li > a:hover {
-              background: #F3f3f3; }
+              background: #F3F3F3; }
             .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"], .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"], .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class*=" icon-"], .aui .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"], .aui .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"], .aui .dockbar .navbar-inner .nav-add-controls > li > a [class*=" icon-"] {
               font-size: 22px;
               margin-top: 0; }
@@ -109,7 +111,7 @@
             font-size: 16px;
             line-height: 32px; }
           .aui .dockbar-split .dockbar .navbar-inner .nav-collapse > .nav > li.dropdown.open > .dropdown-toggle, .aui .dockbar .navbar-inner .nav-collapse > .nav > li.dropdown.open > .dropdown-toggle {
-            color: #FFFFFF; }
+            color: #FFF; }
           .aui .dockbar-split .dockbar .navbar-inner .nav-collapse > .nav > li > a, .aui .dockbar .navbar-inner .nav-collapse > .nav > li > a {
             color: #FFF;
             font-size: 16px;

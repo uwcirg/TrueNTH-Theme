@@ -363,6 +363,249 @@ body.portlet {
   background-image: url(../images/common/team_icon.png); }
 
 /* ---------- Miscellaneous component styles ---------- */
+.lfr-ddm-container .control-group.error .control-label,
+.lfr-ddm-container .control-group.error .help-block,
+.lfr-ddm-container .control-group.error .help-inline {
+  color: #555555; }
+.lfr-ddm-container .control-group.error .checkbox,
+.lfr-ddm-container .control-group.error .radio,
+.lfr-ddm-container .control-group.error input,
+.lfr-ddm-container .control-group.error select,
+.lfr-ddm-container .control-group.error textarea {
+  color: #555555; }
+.lfr-ddm-container .control-group.error input,
+.lfr-ddm-container .control-group.error select,
+.lfr-ddm-container .control-group.error textarea {
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.error input:focus,
+  .lfr-ddm-container .control-group.error select:focus,
+  .lfr-ddm-container .control-group.error textarea:focus {
+    border-color: #b3b3b3;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.lfr-ddm-container .control-group.error .input-prepend .add-on,
+.lfr-ddm-container .control-group.error .input-append .add-on {
+  color: #555555;
+  background-color: whitesmoke;
+  border-color: #555555; }
+.lfr-ddm-container .control-group.info .control-label,
+.lfr-ddm-container .control-group.info .help-block,
+.lfr-ddm-container .control-group.info .help-inline {
+  color: #555555; }
+.lfr-ddm-container .control-group.info .checkbox,
+.lfr-ddm-container .control-group.info .radio,
+.lfr-ddm-container .control-group.info input,
+.lfr-ddm-container .control-group.info select,
+.lfr-ddm-container .control-group.info textarea {
+  color: #555555; }
+.lfr-ddm-container .control-group.info input,
+.lfr-ddm-container .control-group.info select,
+.lfr-ddm-container .control-group.info textarea {
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.info input:focus,
+  .lfr-ddm-container .control-group.info select:focus,
+  .lfr-ddm-container .control-group.info textarea:focus {
+    border-color: #b3b3b3;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.lfr-ddm-container .control-group.info .input-prepend .add-on,
+.lfr-ddm-container .control-group.info .input-append .add-on {
+  color: #555555;
+  background-color: whitesmoke;
+  border-color: #555555; }
+.lfr-ddm-container .control-group.success .control-label,
+.lfr-ddm-container .control-group.success .help-block,
+.lfr-ddm-container .control-group.success .help-inline {
+  color: #555555; }
+.lfr-ddm-container .control-group.success .checkbox,
+.lfr-ddm-container .control-group.success .radio,
+.lfr-ddm-container .control-group.success input,
+.lfr-ddm-container .control-group.success select,
+.lfr-ddm-container .control-group.success textarea {
+  color: #555555; }
+.lfr-ddm-container .control-group.success input,
+.lfr-ddm-container .control-group.success select,
+.lfr-ddm-container .control-group.success textarea {
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.success input:focus,
+  .lfr-ddm-container .control-group.success select:focus,
+  .lfr-ddm-container .control-group.success textarea:focus {
+    border-color: #b3b3b3;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.lfr-ddm-container .control-group.success .input-prepend .add-on,
+.lfr-ddm-container .control-group.success .input-append .add-on {
+  color: #555555;
+  background-color: whitesmoke;
+  border-color: #555555; }
+.lfr-ddm-container .control-group.warning .control-label,
+.lfr-ddm-container .control-group.warning .help-block,
+.lfr-ddm-container .control-group.warning .help-inline {
+  color: #555555; }
+.lfr-ddm-container .control-group.warning .checkbox,
+.lfr-ddm-container .control-group.warning .radio,
+.lfr-ddm-container .control-group.warning input,
+.lfr-ddm-container .control-group.warning select,
+.lfr-ddm-container .control-group.warning textarea {
+  color: #555555; }
+.lfr-ddm-container .control-group.warning input,
+.lfr-ddm-container .control-group.warning select,
+.lfr-ddm-container .control-group.warning textarea {
+  border-color: #cccccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.warning input:focus,
+  .lfr-ddm-container .control-group.warning select:focus,
+  .lfr-ddm-container .control-group.warning textarea:focus {
+    border-color: #b3b3b3;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px white; }
+.lfr-ddm-container .control-group.warning .input-prepend .add-on,
+.lfr-ddm-container .control-group.warning .input-append .add-on {
+  color: #555555;
+  background-color: whitesmoke;
+  border-color: #555555; }
+.lfr-ddm-container .control-group.error > .control-label,
+.lfr-ddm-container .control-group.error > .help-block,
+.lfr-ddm-container .control-group.error > .help-inline {
+  color: #b50303; }
+.lfr-ddm-container .control-group.error > .checkbox,
+.lfr-ddm-container .control-group.error > .radio,
+.lfr-ddm-container .control-group.error > input,
+.lfr-ddm-container .control-group.error > select,
+.lfr-ddm-container .control-group.error > textarea {
+  color: #b50303; }
+.lfr-ddm-container .control-group.error > input,
+.lfr-ddm-container .control-group.error > select,
+.lfr-ddm-container .control-group.error > textarea {
+  border-color: #b50303;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.error > input:focus,
+  .lfr-ddm-container .control-group.error > select:focus,
+  .lfr-ddm-container .control-group.error > textarea:focus {
+    border-color: #830202;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fb2323;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fb2323;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #fb2323; }
+.lfr-ddm-container .control-group.error > .input-prepend .add-on,
+.lfr-ddm-container .control-group.error > .input-append .add-on {
+  color: #b50303;
+  background-color: #fee5e2;
+  border-color: #b50303; }
+.lfr-ddm-container .control-group.info > .control-label,
+.lfr-ddm-container .control-group.info > .help-block,
+.lfr-ddm-container .control-group.info > .help-inline {
+  color: #12718f; }
+.lfr-ddm-container .control-group.info > .checkbox,
+.lfr-ddm-container .control-group.info > .radio,
+.lfr-ddm-container .control-group.info > input,
+.lfr-ddm-container .control-group.info > select,
+.lfr-ddm-container .control-group.info > textarea {
+  color: #12718f; }
+.lfr-ddm-container .control-group.info > input,
+.lfr-ddm-container .control-group.info > select,
+.lfr-ddm-container .control-group.info > textarea {
+  border-color: #12718f;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.info > input:focus,
+  .lfr-ddm-container .control-group.info > select:focus,
+  .lfr-ddm-container .control-group.info > textarea:focus {
+    border-color: #0c4d62;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #24b5e3;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #24b5e3;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #24b5e3; }
+.lfr-ddm-container .control-group.info > .input-prepend .add-on,
+.lfr-ddm-container .control-group.info > .input-append .add-on {
+  color: #12718f;
+  background-color: #cef1fc;
+  border-color: #12718f; }
+.lfr-ddm-container .control-group.success > .control-label,
+.lfr-ddm-container .control-group.success > .help-block,
+.lfr-ddm-container .control-group.success > .help-inline {
+  color: #488f06; }
+.lfr-ddm-container .control-group.success > .checkbox,
+.lfr-ddm-container .control-group.success > .radio,
+.lfr-ddm-container .control-group.success > input,
+.lfr-ddm-container .control-group.success > select,
+.lfr-ddm-container .control-group.success > textarea {
+  color: #488f06; }
+.lfr-ddm-container .control-group.success > input,
+.lfr-ddm-container .control-group.success > select,
+.lfr-ddm-container .control-group.success > textarea {
+  border-color: #488f06;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.success > input:focus,
+  .lfr-ddm-container .control-group.success > select:focus,
+  .lfr-ddm-container .control-group.success > textarea:focus {
+    border-color: #2f5e04;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #79f10a;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #79f10a;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #79f10a; }
+.lfr-ddm-container .control-group.success > .input-prepend .add-on,
+.lfr-ddm-container .control-group.success > .input-append .add-on {
+  color: #488f06;
+  background-color: #f1fbd1;
+  border-color: #488f06; }
+.lfr-ddm-container .control-group.warning > .control-label,
+.lfr-ddm-container .control-group.warning > .help-block,
+.lfr-ddm-container .control-group.warning > .help-inline {
+  color: #bf7900; }
+.lfr-ddm-container .control-group.warning > .checkbox,
+.lfr-ddm-container .control-group.warning > .radio,
+.lfr-ddm-container .control-group.warning > input,
+.lfr-ddm-container .control-group.warning > select,
+.lfr-ddm-container .control-group.warning > textarea {
+  color: #bf7900; }
+.lfr-ddm-container .control-group.warning > input,
+.lfr-ddm-container .control-group.warning > select,
+.lfr-ddm-container .control-group.warning > textarea {
+  border-color: #bf7900;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .lfr-ddm-container .control-group.warning > input:focus,
+  .lfr-ddm-container .control-group.warning > select:focus,
+  .lfr-ddm-container .control-group.warning > textarea:focus {
+    border-color: #8c5900;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffaf26;
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffaf26;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffaf26; }
+.lfr-ddm-container .control-group.warning > .input-prepend .add-on,
+.lfr-ddm-container .control-group.warning > .input-append .add-on {
+  color: #bf7900;
+  background-color: #fffbdc;
+  border-color: #bf7900; }
+
+/* ---------- Dynamic data list display/Journal portlet ---------- */
+.portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper[data-repeatable="true"], .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper .field-wrapper, .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper[data-repeatable="true"], .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper .field-wrapper, .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper[data-repeatable="true"], .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper .field-wrapper {
+  border: 1px solid #D0D0D0;
+  border-left-width: 10px;
+  padding: 7px 10px 10px; }
+  .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper[data-repeatable="true"][data-repeatable="true"]:nth-of-type(even), .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper .field-wrapper[data-repeatable="true"]:nth-of-type(even), .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper[data-repeatable="true"][data-repeatable="true"]:nth-of-type(even), .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper .field-wrapper[data-repeatable="true"]:nth-of-type(even), .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper[data-repeatable="true"][data-repeatable="true"]:nth-of-type(even), .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper .field-wrapper[data-repeatable="true"]:nth-of-type(even) {
+    background-color: #F5F5F5; }
+  .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper[data-repeatable="true"], .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper[data-repeatable="true"] .field-wrapper, .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper .field-wrapper, .portlet-dynamic-data-list-display .lfr-ddm-container .field-wrapper .field-wrapper .field-wrapper, .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper[data-repeatable="true"], .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper[data-repeatable="true"] .field-wrapper, .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper .field-wrapper, .portlet-dynamic-data-lists .lfr-ddm-container .field-wrapper .field-wrapper .field-wrapper, .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper[data-repeatable="true"], .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper[data-repeatable="true"] .field-wrapper, .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper .field-wrapper, .portlet-journal .journal-article-container .lfr-ddm-container .field-wrapper .field-wrapper .field-wrapper {
+    margin: 15px 0 0; }
+
 /* ---------- Add content dialog ---------- */
 .lfr-portlet-item, .lfr-portlet-item p a {
   font-size: 1em; }
