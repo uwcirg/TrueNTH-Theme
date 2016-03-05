@@ -1,11 +1,8 @@
 var header;
 $.ajax({
 	url : PROTECTED_PORTAL_NAV_PAGE,
-	crossDomain : true,
+	async: false,
 	cache : false,
-	xhrFields : {
-		withCredentials : true
-	},
 	success : function(data) {
 		syncProtectedHeader();
 		header=data;
@@ -14,7 +11,6 @@ $.ajax({
 
 		$.ajax({
 			url : UNPROTECTED_PORTAL_NAV_PAGE,
-			crossDomain : true,
 			async: false,
 			dataType: "html",
 			contentType : 'text/plain',
