@@ -3273,107 +3273,41 @@ html.trueNTH.aui, .trueNTH.aui body {
   min-height: 100%;
   background-color: #9aa19a; }
 
-.trueNTH.aui {
-  /*** Styles for responsive xs size ***/ }
-  .trueNTH.aui #pageHeader {
-    position: relative;
-    z-index: 499; }
-  .trueNTH.aui .tnth-nav-wrapper {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .trueNTH.aui .tnth-nav-main {
-    width: 100%;
-    max-width: 100%;
-    background-color: #1A1919;
-    background-image: url("https://truenth-demo.cirg.washington.edu/static/img/truenth_mtn_background3.jpg");
-    height: 74px;
-    background-size: cover;
-    margin: 0 0 40px 0;
-    padding: 5px 15px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  .trueNTH.aui #tnthLogo {
-    float: left; }
-  .trueNTH.aui #tnthLogo img {
-    height: 64px; }
-  .trueNTH.aui #tnthTopLinks {
-    float: right; }
-  .trueNTH.aui #tnthUserBtn {
-    padding: 6px 12px;
-    height: inherit; }
-  .trueNTH.aui .tnth-nav-btn {
-    padding: 6px 12px;
-    height: inherit;
-    line-height: inherit; }
-  .trueNTH.aui .tnth-white, .trueNTH.aui .tnth-white .f, .trueNTH.aui .tnth-white:visited {
-    color: #ECF7E5;
-    background-color: transparent;
-    border-color: transparent;
-    transition: all 0.2s ease-in-out 0s;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    text-shadow: none;
-    background-image: none; }
-  .trueNTH.aui .tnth-white:hover, .trueNTH.aui .tnth-white:hover .fa,
-  .trueNTH.aui .tnth-white:focus, .trueNTH.aui .tnth-white:focus .fa,
-  .trueNTH.aui .tnth-white.active, .trueNTH.aui .tnth-white:active .fa {
-    color: #333;
-    background-color: #fff; }
-  .trueNTH.aui .tnth-white.navbar-toggle {
-    margin: 8px 15px 8px 0; }
-  .trueNTH.aui .tnth-nav-xs {
-    margin: 0 0 5px;
-    width: 100%;
-    background-color: #83885F;
-    background-image: url("https://truenth-demo.cirg.washington.edu/static/img/truenth_mtn_background3.jpg");
-    background-size: auto 71px;
-    background-repeat: no-repeat;
-    padding: 5px 15px; }
-  .trueNTH.aui .tnth-nav-xs .navbar-brand {
-    padding: 0; }
-  .trueNTH.aui .tnth-nav-xs .navbar-brand img {
-    height: 52px; }
-  .trueNTH.aui .tnth-nav-xs .nav a {
-    color: #fff; }
-  .trueNTH.aui .tnth-nav-xs .nav a:active, .trueNTH.aui .tnth-nav-xs .nav a:hover {
-    color: #333; }
-  .trueNTH.aui .tnth-nav-xs .tnth-white.navbar-toggle {
-    margin: 0;
-    padding: 0 0 0 10px; }
-  .trueNTH.aui #tnthNavbarXs {
-    padding-top: 30px; }
-  @media (min-width: 1200px) {
-    .trueNTH.aui #tnthLogo {
-      margin-left: 80px; } }
-  .trueNTH.aui #navigation .navbar-inner {
-    color: #fff;
-    background: #83885f none repeat scroll 0 0;
-    text-decoration: none;
-    border-radius: 4px;
-    border-width: 0;
-    min-height: 36px; }
-  .trueNTH.aui #navigation .nav > .active > a {
-    background-color: #f5f5f5;
-    background-image: none;
-    box-shadow: none;
-    color: #555; }
-  .trueNTH.aui .dockbar {
-    margin-left: auto;
-    margin-right: auto; }
-  .trueNTH.aui #pageContent {
-    position: relative;
-    top: -35px; }
-    @media (max-width: 767px) {
-      .trueNTH.aui #pageContent {
-        top: -5px; } }
-    @media (min-width: 768px) and (max-width: 979px) {
-      .trueNTH.aui #pageContent {
-        top: -25px; } }
-  .trueNTH.aui #pageContent.withDock {
-    top: -40px; }
-    @media (max-width: 767px) {
-      .trueNTH.aui #pageContent.withDock {
-        top: -5px; } }
-    @media (min-width: 768px) and (max-width: 979px) {
-      .trueNTH.aui #pageContent.withDock {
-        top: -40px; } }
+.trueNTH.aui #pageHeader {
+  position: relative;
+  z-index: 499; }
+.trueNTH.aui #tnthNavMain {
+  margin: 0 0 40px 0; }
+.trueNTH.aui #navigation .navbar-inner {
+  color: #fff;
+  background: #83885f none repeat scroll 0 0;
+  text-decoration: none;
+  border-radius: 4px;
+  border-width: 0;
+  min-height: 36px; }
+.trueNTH.aui #navigation .nav > .active > a {
+  background-color: #f5f5f5;
+  background-image: none;
+  box-shadow: none;
+  color: #555; }
+.trueNTH.aui .dockbar {
+  margin-left: auto;
+  margin-right: auto; }
+.trueNTH.aui #pageContent {
+  position: relative;
+  top: -35px; }
+  @media (max-width: 767px) {
+    .trueNTH.aui #pageContent {
+      top: -5px; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .trueNTH.aui #pageContent {
+      top: -25px; } }
+.trueNTH.aui #pageContent.withDock {
+  top: -40px; }
+  @media (max-width: 767px) {
+    .trueNTH.aui #pageContent.withDock {
+      top: -5px; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .trueNTH.aui #pageContent.withDock {
+      top: -40px; } }
 
