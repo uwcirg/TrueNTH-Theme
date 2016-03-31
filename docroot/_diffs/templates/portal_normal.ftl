@@ -17,6 +17,8 @@
 					
 			${theme.include(top_head_include)}
 			
+			<link href="${csLocation}/static/css/portal.css" rel="stylesheet">
+			
 		</head>
 		
 		<body class="${css_class}">
@@ -30,7 +32,7 @@
 			<#else>
 				<#include "${full_templates_path}/portal_normal_content.ftl" />
 			</#if>
-				
+			
 		</body>
 	</html>
 </#if>

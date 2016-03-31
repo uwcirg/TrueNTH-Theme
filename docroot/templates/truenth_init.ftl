@@ -21,3 +21,5 @@ ${callbackParameters.add(TrueNTHOAuthConstants.REDIRECT, portalUtil.getCurrentCo
 		<#assign trueNTHId=trueNTHAssociation.trueNTHId />
 	</#if>
 </#if>
+
+<#assign trueNTH_nav_item_css_class = "btn-lg btn-tnth-primary" />

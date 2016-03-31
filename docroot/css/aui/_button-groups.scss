@@ -181,23 +181,6 @@
   border-bottom-width: 5px;
 }
 
-
-
-// Account for other colors
-.btn-primary,
-.btn-warning,
-.btn-danger,
-.btn-info,
-.btn-success,
-.btn-inverse {
-  .caret {
-    border-top-color: $white;
-    border-bottom-color: $white;
-  }
-}
-
-
-
 // Vertical button groups
 // ----------------------
 

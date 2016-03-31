@@ -714,13 +714,6 @@
   .aui body.yui3-skin-sam .yui3-widget-mask {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
-  .aui .btn-primary {
-    background-color: #33553d;
-    background-image: linear-gradient(to bottom, #33553d, #33553d);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
   .aui .nav-list > .active > a, .aui .nav-list > .active > a:hover, .aui .nav-list > .active > a:focus {
     background-color: #5aad65;
     color: white;

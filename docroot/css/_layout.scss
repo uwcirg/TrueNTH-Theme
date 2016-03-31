@@ -9,8 +9,11 @@
 /* ---------- Wrapper ---------- */
 
 #wrapper {
-	padding: 2em 5em 0;
-	position: relative;
+	padding-top: 2em;
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 
 	@include respond-to(phone) {
 		padding: 0 0.5em 0;
@@ -20,3 +23,9 @@
 		padding: 0 2em 0;
 	}
 }
+
+#footer {
+	display: block;
+	width: 90%;
+	margin: auto;
+} 

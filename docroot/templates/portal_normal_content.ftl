@@ -35,15 +35,9 @@ ${theme.include(top_body_js)}
 </main>
 
 <footer id="footer" role="contentinfo">
-	<p class="powered-by">
-		<@liferay.language key="powered-by" /> <a href="https://us.movember.com/programs/prostate-cancer" rel="external">TrueNTH USA</a> 
-	</p>
+	 <a href="http://us.movember.com" title="Movember"><img id="footerLockup" src="${csLocation}/static/img/logo_movember_lockup.png"></a>
 </footer>
 
 ${theme.include(body_bottom_include)}
 	
 ${theme.include(bottom_include)}
-
-<#if showHeader>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-</#if>

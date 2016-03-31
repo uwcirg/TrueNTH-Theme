@@ -574,14 +574,22 @@ body.html-editor {
 
 /* ---------- Wrapper ---------- */
 #wrapper {
-  padding: 2em 5em 0;
-  position: relative; }
+  padding-top: 2em;
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
   @media (max-width: 767px) {
     #wrapper {
       padding: 0 0.5em 0; } }
   @media (min-width: 768px) and (max-width: 979px) {
     #wrapper {
       padding: 0 2em 0; } }
+
+#footer {
+  display: block;
+  width: 90%;
+  margin: auto; }
 
 .aui {
   /* ---------- Staging dockbar ---------- */
@@ -2815,17 +2823,6 @@ body:first-of-type .portlet-content:hover .lfr-icon-actions .taglib-text {
   .aui body.yui3-skin-sam .yui3-widget-mask {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
-  .aui .btn-primary {
-    background-color: #33553d;
-    background-image: linear-gradient(to bottom, #33553d, #33553d);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
-  .aui .nav-list > .active > a, .aui .nav-list > .active > a:hover, .aui .nav-list > .active > a:focus {
-    background-color: #5aad65;
-    color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
 
 .aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
   border-width: 0; }
@@ -3270,8 +3267,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 html.trueNTH.aui, .trueNTH.aui body {
   margin: 0;
   height: 100%;
-  min-height: 100%;
-  background-color: #9aa19a; }
+  min-height: 100%; }
 
 .trueNTH.aui #pageHeader {
   position: relative;
@@ -3286,10 +3282,10 @@ html.trueNTH.aui, .trueNTH.aui body {
   border-width: 0;
   min-height: 36px; }
 .trueNTH.aui #navigation .nav > .active > a {
-  background-color: #f5f5f5;
-  background-image: none;
-  box-shadow: none;
-  color: #555; }
+  color: #fff;
+  background-color: #2a4531;
+  border-color: #1c2f21;
+  box-shadow: none; }
 .trueNTH.aui .dockbar {
   margin-left: auto;
   margin-right: auto; }

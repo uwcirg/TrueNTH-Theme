@@ -21,7 +21,7 @@
 							<#assign nav_item_link_css_class="dropdown-toggle" />
 						</#if>
 			
-						<li ${nav_item_attr_selected} class="${nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
+						<li ${nav_item_attr_selected} class="${nav_item_css_class} ${trueNTH_nav_item_css_class}" id="layout_${nav_item.getLayoutId()}" role="presentation">
 							<a aria-labelledby="layout_${nav_item.getLayoutId()}" ${nav_item_attr_has_popup} href="${nav_item.getURL()}" ${nav_item.getTarget()} role="menuitem">
 								<span>${nav_item.icon()} ${nav_item.getName()}</span>
 							</a>

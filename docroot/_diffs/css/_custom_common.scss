@@ -991,19 +991,6 @@
 		@include opacity(0.8);
 	}
 	
-	.btn-primary {
-	  background-color: #33553d;
-	  background-image: linear-gradient(to bottom, #33553d, #33553d);
-	  background-repeat: repeat-x;
-	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	  color: white;
-	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	}
-	.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
-	    background-color: #5aad65;
-	    color: white;
-	    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-	}
 }
 
 .aui .navbar-fixed-top .navbar-inner, .aui .navbar-static-top .navbar-inner {
