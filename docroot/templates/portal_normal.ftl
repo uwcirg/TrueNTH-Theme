@@ -17,12 +17,10 @@
 					
 			${theme.include(top_head_include)}
 			
-			<link href="${csLocation}/static/css/portal.css" rel="stylesheet">
-			
 		</head>
 		
 		<body class="${css_class}">
-		
+
 			<#if showHeader>
 				<header id="pageHeader"></header>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

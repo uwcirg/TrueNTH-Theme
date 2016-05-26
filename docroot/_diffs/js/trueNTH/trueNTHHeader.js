@@ -1,4 +1,3 @@
-var header;
 $.ajax({
 	url : PROTECTED_PORTAL_NAV_PAGE,
 	crossDomain : true,
@@ -6,9 +5,9 @@ $.ajax({
 	xhrFields : {
 		withCredentials : true
 	},
-	success : function(data) {
+	success : function(header, textStatus, jqXHR) {
 		syncProtectedHeader();
-		header=data;
+		$('#pageHeader').append(header);
 	},
 	error : function(jqXHR, textStatus, errorThrown) {
 
@@ -21,16 +20,25 @@ $.ajax({
 			data : {
 				login_url : LOGIN_URL
 			},
-			success : function(data) {
+			success : function(header) {
 				syncUnprotectedHeader();
-				header=data;
+				$('#pageHeader').append(header);
 			}
-		})
+		});
 	},
 	complete : function(jqXHR, textStatus) {
-		$.get(window.location.href, "sync", function(content) {
-			$("#pageHeader").html(header);
-			$('body').append(content);
-		},'html')
+		
+		$.ajax({
+			url : CURRENT_URL,
+			dataType: "html",
+			contentType : 'text/plain',
+			data : {
+				sync : true
+			},
+			success : function(content) {
+				$('body').append(content);
+			}
+		});
 	}
-})
+});
+

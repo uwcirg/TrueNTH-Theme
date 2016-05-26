@@ -1,12 +1,13 @@
-<script type="text/javascript">
+<script>
 	function syncProtectedHeader(){
-		<#if !is_signed_in>
-			window.location.replace(LOGIN_URL);
+		<#if !is_signed_in && !(session.getAttribute(TrueNTHConnectWebkeys.TRUENTH_ACCESS_TOKEN)??)>
+			window.location.assign(LOGIN_URL);
 		</#if>
 	}
+	
 	function syncUnprotectedHeader(){
 		<#if is_signed_in>
-			window.location.replace(LOGOUT_URL);
+			window.location.assign(LOGOUT_URL);
 		</#if>
 	}
 </script>
