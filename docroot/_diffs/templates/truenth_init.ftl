@@ -12,8 +12,6 @@
 ${callbackParameters.add(TrueNTHOAuthConstants.REDIRECT, currentCompleteURL)}	
 <#assign trueNTHConnectLoginURL = trueNTHConnect.getAuthorizationUrl(companyId,1, callbackParameters) />
 
-<#assign trueNTHConnectLogoutURL = themeDisplay.getURLSignOut() />
-
 <#if userId??>
 	<#assign trueNTHAssociation=TrueNTHAssociationLocalService.getByUserId(userId)!'' />
 	<#assign isTrueNTHUser=trueNTHAssociation?has_content />

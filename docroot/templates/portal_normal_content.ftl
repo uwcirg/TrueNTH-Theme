@@ -1,5 +1,4 @@
 ${theme.include(top_body_js)}
-
 <main id="pageContent" class="${contentClass!""}">
 	
 	${theme.include(body_top_include)}
