@@ -34,7 +34,7 @@ ${theme.include(top_body_js)}
 </main>
 
 <footer id="footer" role="contentinfo">
-	 <a href="http://us.movember.com" title="Movember"><img id="footerLockup" src="${csLocation}/static/img/logo_movember_lockup.png"></a>
+	 <a href="http://us.movember.com" title="Movember"><img id="footerLockup" src="${ssLocation}/static/img/logo_movember_lockup.png"></a>
 </footer>
 
 ${theme.include(body_bottom_include)}

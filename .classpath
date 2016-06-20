@@ -20,7 +20,5 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/uwdev/workspace/libraries/TrueNTHGlobal.jar"/>
 	<classpathentry kind="lib" path="/home/uwdev/workspace/libraries/TrueNTHConnect-portlet-service.jar"/>
-	<classpathentry kind="lib" path="/home/uwdev/workspace/libraries/scribe-1.3.0.jar"/>
-	<classpathentry kind="lib" path="/home/uwdev/workspace/libraries/JTrueNTHOAuthClient.jar" sourcepath="/JTrueNTHOAuth Client"/>
 	<classpathentry kind="output" path="docroot/WEB-INF/classes"/>
 </classpath>

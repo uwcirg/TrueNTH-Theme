@@ -11,9 +11,7 @@
 		<meta name="description" content="TrueNTH Portal">
 		<meta name="keywords" content="TrueNTH, Movember, CIRG">
 		<meta name="viewport" content="initial-scale=1.0, width=device-width">
-		
-		<meta http-equiv="cache-control" content="no-cache, must-revalidate, pre-check=0, post-check=0, max-age=0, s-maxage=0" />
-				
+						
 		${theme.include(top_head_include)}
 		
 	</head>
